@@ -5,6 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut" href="http://demos.jquerymobile.com/1.4.5/favicon.ico">
 	<script src="http://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>
 	<script src="http://demos.jquerymobile.com/1.4.5/_assets/js/index.js"></script>
@@ -15,7 +21,7 @@
 <!-- Start of first page: #one -->
 <div data-role="page" id="one">
 
-	<div data-role="header">
+	<div data-role="header" class="alert alert-warning">
 		<h1>Multi-page</h1>
 	</div><!-- /header -->
 
@@ -29,11 +35,11 @@
 		<p>You link to internal pages by referring to the <code>id</code> of the page you want to show. For example, to <a href="#two">link</a> to the page with an <code>id</code> of "two", my link would have a <code>href="#two"</code> in the code.</p>
 
 		<h3>Show internal pages:</h3>
-		<p><a href="#two" class="ui-btn ui-shadow ui-corner-all">Forward to page "two"</a></p>
+		<p><a href="#two" class="ui-btn ui-shadow ui-corner-all ui-icon-forward ui-btn-icon-right">Forward to page "two"</a></p>
 		<p><a href="#popup" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="turn">Show page "popup" (as a dialog)</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer" data-theme="a">
+	<div data-role="footer" data-theme="a" class="alert alert-success">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page one -->
@@ -41,7 +47,7 @@
 <!-- Start of second page: #two -->
 <div data-role="page" id="two" data-theme="a">
 
-	<div data-role="header">
+	<div data-role="header" class="alert alert-warning">
 		<h1>Two</h1>
 	</div><!-- /header -->
 
@@ -49,49 +55,253 @@
 		<h2>Two</h2>
 		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>
 		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
-		<p><a href="#one" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all">Back to page "one"</a></p>
-		<p><a href="#third" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all">Forward to page "three"</a></p>
+		<p><a href="#one" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+		<p><a href="#third" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-forward ui-btn-icon-right">Forward to page "three"</a></p>
 
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" class="alert alert-success">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
-<!-- Start of third page: #popup -->
-<div data-role="page" id="popup">
+<!-- Start of popup page: #popuphilux -->
+<div data-role="page" id="popuphilux">
 
-	<div data-role="header" data-theme="b">
-		<h1>Dialog</h1>
+	<div data-role="header" data-theme="b" class="alert alert-danger">
+		<h1>Toyota HILUX</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-		<h2>Popup</h2>
+		<h2>Toyota HILUX</h2>
 		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
-		<p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "one"</a></p>
+        <p><img src="./img/hilux-medium.png" alt="Toyota C-HR" style="width: 50%"></p>
+		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" class="alert alert-danger">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of popup page: #popupavensis -->
+<div data-role="page" id="popupavensis">
+
+	<div data-role="header" data-theme="b" class="alert alert-danger">
+		<h1>Toyota AVENSIS</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Toyota AVENSIS</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><img src="./img/avensis-medium.png" alt="Toyota Avensis" style="width: 50%"></p>
+		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="alert alert-danger">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of popup page: #popupgt86 -->
+<div data-role="page" id="popupgt86">
+
+	<div data-role="header" data-theme="b" class="alert alert-danger">
+		<h1>Toyota GT86</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Toyota GT86</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><img src="./img/ch-r-medium.png" alt="Toyota GT86" style="width: 50%"></p>
+		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="alert alert-danger">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of popup page: #popupgt86 -->
+<div data-role="page" id="popupaygo">
+
+	<div data-role="header" data-theme="b" class="alert alert-danger">
+		<h1>Toyota AYGO</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Toyota AYGO</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><img src="./img/aygo-medium.png" alt="Toyota GT86" style="width: 50%"></p>
+		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="alert alert-danger">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of popup page: #popupchr -->
+<div data-role="page" id="popupchr">
+
+	<div data-role="header" data-theme="b" class="alert alert-danger">
+		<h1>Toyota C-HR</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Toyota C-HR</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><img src="./img/ch-r-medium.png" alt="Toyota GT86" style="width: 50%"></p>
+		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="alert alert-danger">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of popup page: #popupyaris -->
+<div data-role="page" id="popupyaris">
+
+	<div data-role="header" data-theme="b" class="alert alert-danger">
+		<h1>Toyota Yaris</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Toyota Yaris</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><img src="./img/yaris-medium.png" alt="Toyota GT86" style="width: 50%"></p>
+		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="alert alert-danger">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
 
 
-<!-- Start of fourth page: #popup -->
+<!-- Start of third page: -->
 <div data-role="page" id="third" data-theme="a">
 
-	<div data-role="header">
+	<div data-role="header" class="alert alert-warning">
 		<h1>Three</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
 		<h2>Popup</h2>
 		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
-		<p><a href="#two" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "two"</a></p>
+        <p><a href="#two" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left">Back to page "two"</a></p>
+        <p><a href="#fourth" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-forward ui-btn-icon-right">Forward to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" class="alert alert-success">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of fourth page: -->
+<div data-role="page" id="fourth" data-theme="a">
+
+	<div data-role="header" class="alert alert-warning">
+		<h1>Form (Four)</h1>
+	</div><!-- /header -->
+    <div class="ui-field-contain">
+        <img src="./img/toyota-logo-png.png" alt="toyota" style="width: 17%">
+    </div>
+	<div role="main" class="ui-content">
+		<h2>Personal info:</h2>
+        
+    <form action="#" method="post">   
+        <div class="ui-field-contain">
+            <label for="fname">Firstname:</label>
+            <input type="text" name="fname" id="tfname" placeholder="Text input" value="">
+        </div>
+         <div class="ui-field-contain">
+            <label for="lname">Lastname:</label>
+            <input type="text" name="lname" id="lname" placeholder="Text input" value="">
+        </div>
+        <div class="ui-field-contain">
+            <label for="date">Birthdate:</label>
+            <input type="date" name="date" id="date" value="">
+        </div>
+        <div class="ui-field-contain">
+            <div data-role="rangeslider" data-mini="true">
+                <label for="range-2a">Mini rangeslider:</label>
+                <input type="range" name="range-2a" id="range-2a" min="0" max="24" value="09">
+                <label for="range-2b">Mini rangeslider:</label>
+                <input type="range" name="range-2b" id="range-2b" min="0" max="24" value="23">
+            </div>
+        </div>
+        <fieldset data-role="controlgroup">
+            <legend>Choose Vehicle:</legend>
+            <ul data-role="listview" data-split-icon="gear" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+			
+			<li class="ui-li-has-alt ui-li-has-thumb ui-first-child">
+			
+			<a href="#" class="ui-btn">
+				<img src="./img/hilux-mega-menu.png">
+			<h2>HILUX</h2>
+			<p>Toyota Aarhus Nord/Syd</p></a>
+			
+				<a href="#popuphilux" data-rel="dialog" data-transition="turn" class="ui-btn ui-btn-icon-notext ui-icon-gear" title="Test Drive HILUX"></a>
+			</li>
+			
+			<li class="ui-li-has-alt ui-li-has-thumb"><a href="#" class="ui-btn">
+				<img src="./img/avensis-mega-menu.png">
+			<h2>AVENSIS</h2>
+			<p>Toyota Aarhus Nord</p></a>
+				<a href="#popupavensis" data-rel="dialog" data-transition="turn" class="ui-btn ui-btn-icon-notext ui-icon-gear" title="Test Drive Avensis"></a>
+			</li>
+			
+			<li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+				<img src="./img/gt86-mega-menu.png">
+			<h2>GT86</h2>
+			<p>Toyota Aarhus Syd</p></a>
+				<a href="#popupgt86" data-rel="dialog" data-transition="turn" class="ui-btn ui-btn-icon-notext ui-icon-gear" title="Test Drive AYGO"></a>
+			</li>
+			
+			<li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+				<img src="./img/aygo-mega-menu.png">
+			<h2>AYGO</h2>
+			<p>Toyota Aarhus Syd</p></a>
+				<a href="#popupaygo" data-rel="dialog" data-transition="turn" class="ui-btn ui-btn-icon-notext ui-icon-gear" title="Test Drive AYGO"></a>
+			</li>
+			
+			<li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+				<img src="./img/ch-r-mega-menu.png">
+			<h2>Toyota C-HR</h2>
+			<p>Toyota Aarhus Nord</p></a>
+				<a href="#popupchr" data-rel="dialog" data-transition="turn" class="ui-btn ui-btn-icon-notext ui-icon-gear" title="Test Drive Toyota CH-R"></a>
+			</li>
+			
+			<li class="ui-li-has-alt ui-li-has-thumb ui-last-child"><a href="#" class="ui-btn">
+				
+			<h2>Yaris</h2>
+			<p>Toyota Aarhus Nord</p></a>
+				<a href="#popupyaris" data-rel="dialog" data-transition="turn" class="ui-btn ui-btn-icon-notext ui-icon-gear" title="Test Drive Yaris"></a>
+			</li>
+			
+		</ul>    
+        </fieldset>
+          
+          <fieldset data-role="controlgroup">
+    <legend>Radio buttons, vertical controlgroup:</legend>
+        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="hilux" checked="checked">
+        <label for="radio-choice-1">Cat</label>
+        
+        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+        <label for="radio-choice-2">Dog</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+        <label for="radio-choice-3">Hamster</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4">
+        <label for="radio-choice-4">Lizard</label>
+</fieldset>
+           
+    </form>
+		<p><a href="#third" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "three"</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" class="alert alert-success">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
