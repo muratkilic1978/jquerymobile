@@ -1,0 +1,26 @@
+    <form action="#" method="post">   
+        <div class="ui-field-contain">
+            <label for="fname">Firstname:</label>
+            <input type="text" name="fname" id="tfname" placeholder="Text input" value="">
+        </div>
+         <div class="ui-field-contain">
+            <label for="lname">Lastname:</label>
+            <input type="text" name="lname" id="lname" placeholder="Text input" value="">
+        </div>
+        <div class="ui-field-contain">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" value="">
+        </div>
+        <div class="ui-field-contain">
+            <label for="date">Pick date:</label>
+            <input type="date" name="date" id="date" value="">
+        </div>
+        <div class="ui-field-contain">
+            <div data-role="rangeslider" data-mini="true">
+                <label for="range-2a">Pick time-interval:</label>
+                <input type="range" name="range-2a" id="range-2a" min="0" max="24" value="09">
+                <label for="range-2b">Pick time-interval:</label>
+                <input type="range" name="range-2b" id="range-2b" min="0" max="24" value="23">
+            </div>
+        </div>
+    </form>

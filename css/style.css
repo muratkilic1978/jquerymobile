@@ -1,3 +1,15 @@
 legend {
     font-size: 16px;
 }
+
+ .well {
+            background-color: rgb(22, 105, 173);
+        }
+
+h2.well {
+    color: #d0232d;
+}
+
+div.ui-content {
+     border: 5px solid white; 
+}

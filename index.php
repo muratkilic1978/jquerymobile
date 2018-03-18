@@ -69,7 +69,7 @@
 <div data-role="page" id="popuphilux">
 
 	<div data-role="header" data-theme="b" class="alert alert-danger">
-		<h1>PToyota HILUX</h1>
+		<h1>Toyota HILUX</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
@@ -302,14 +302,24 @@
             <div class="ui-field-contain">
                 <div data-role="rangeslider" data-mini="true">
                     <label for="range-2a">Pick time-interval:</label>
-                    <input type="range" name="range" id="range" min="08" max="18" value="">
+                    <input type="range" name="range1" id="range" min="8" max="18" value="9">
                     <label for="range-2b">Pick time-interval:</label>
-                    <input type="range" name="range-2b" id="range-2b" min="08" max="18" value="">
+                    <input type="range" name="range2" id="range-2b" min="08" max="18" value="12">
                 </div>
             </div>
+            <label for="select-choice-0" class="select">Choose car model:</label>
+                <select name="carmodel" id="select-choice-0">
+                   <option value="Toyota Hilux">Toyota Hilux</option>
+                   <option value="Toyota Avensis">Toyota Avensis</option>
+                   <option value="Toyota GT86">Toyota GT86</option>
+                   <option value="Toyota AYGO">Toyota AYGO</option>
+                   <option value="Toyota C-HR">Toyota C-HR</option>
+                   <option value="Toyota Yaris">Toyota Yaris</option>
+                </select>
             <div class="ui-field-contain">
                 <input type="submit" value="Submit Button" data-theme="a"/>
             </div>
+           
         </form>
 
 	</div><!-- /content -->
