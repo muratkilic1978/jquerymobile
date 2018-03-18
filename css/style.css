@@ -10,6 +10,10 @@ h2.well {
     color: #d0232d;
 }
 
-div.ui-content {
+div#ui-content-senddata {
      border: 5px solid white; 
+}
+
+legend {
+    color: white;
 }

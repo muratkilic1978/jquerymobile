@@ -68,7 +68,7 @@
 <!-- Start of popup page: #popuphilux -->
 <div data-role="page" id="popuphilux">
 
-	<div data-role="header" data-theme="b" class="alert alert-danger">
+	<div data-role="header" data-theme="b"  class="alert alert-dark">
 		<h1>Toyota HILUX</h1>
 	</div><!-- /header -->
 
@@ -79,7 +79,7 @@
 		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer" class="alert alert-danger">
+	<div data-role="footer" class="alert alert-dark">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
@@ -87,7 +87,7 @@
 <!-- Start of popup page: #popupavensis -->
 <div data-role="page" id="popupavensis">
 
-	<div data-role="header" data-theme="b" class="alert alert-danger">
+	<div data-role="header" data-theme="b" class="alert alert-dark" >
 		<h1>Toyota AVENSIS</h1>
 	</div><!-- /header -->
 
@@ -98,7 +98,7 @@
 		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer" class="alert alert-danger">
+	<div data-role="footer" class="alert alert-dark" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
@@ -106,7 +106,7 @@
 <!-- Start of popup page: #popupgt86 -->
 <div data-role="page" id="popupgt86">
 
-	<div data-role="header" data-theme="b" class="alert alert-danger">
+	<div data-role="header" data-theme="b" class="alert alert-dark">
 		<h1>Toyota GT86</h1>
 	</div><!-- /header -->
 
@@ -117,7 +117,7 @@
 		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer" class="alert alert-danger">
+	<div data-role="footer" class="alert alert-dark" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
@@ -125,7 +125,7 @@
 <!-- Start of popup page: #popupgt86 -->
 <div data-role="page" id="popupaygo">
 
-	<div data-role="header" data-theme="b" class="alert alert-danger">
+	<div data-role="header" data-theme="b" class="alert alert-dark">
 		<h1>Toyota AYGO</h1>
 	</div><!-- /header -->
 
@@ -136,7 +136,7 @@
 		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer" class="alert alert-danger">
+	<div data-role="footer" class="alert alert-dark" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
@@ -144,7 +144,7 @@
 <!-- Start of popup page: #popupchr -->
 <div data-role="page" id="popupchr">
 
-	<div data-role="header" data-theme="b" class="alert alert-danger">
+	<div data-role="header" data-theme="b" class="alert alert-dark">
 		<h1>Toyota C-HR</h1>
 	</div><!-- /header -->
 
@@ -155,7 +155,7 @@
 		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer" class="alert alert-danger">
+	<div data-role="footer" class="alert alert-dark" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
@@ -163,7 +163,7 @@
 <!-- Start of popup page: #popupyaris -->
 <div data-role="page" id="popupyaris">
 
-	<div data-role="header" data-theme="b" class="alert alert-danger">
+	<div data-role="header" data-theme="b" class="alert alert-dark">
 		<h1>Toyota Yaris</h1>
 	</div><!-- /header -->
 
@@ -174,7 +174,7 @@
 		<p><a href="#fourth" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "four"</a></p>
 	</div><!-- /content -->
 
-	<div data-role="footer" class="alert alert-danger">
+	<div data-role="footer" class="alert alert-dark" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
@@ -183,7 +183,7 @@
 <!-- Start of third page: -->
 <div data-role="page" id="third" data-theme="a">
 
-	<div data-role="header" class="alert alert-warning">
+	<div data-role="header" class="alert alert-dark">
 		<h1>Page Three</h1>
 	</div><!-- /header -->
 

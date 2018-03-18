@@ -16,7 +16,7 @@
     <div class="ui-field-contain">
         <img src="./img/toyota-logo-png.png" alt="toyota" style="width: 17%">
     </div>
-	<div role="main" class="ui-content">
+	<div role="main" class="ui-content" id="ui-content-senddata">
         <h1>Thank you!</h1>
         <h2>You will recieve a confirmation mail very soon.</h2>
         <h3>Your submitted data:</h3>
